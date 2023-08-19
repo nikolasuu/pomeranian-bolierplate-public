@@ -10,6 +10,7 @@ import { blockRouterMetaData as MaterialUIBasicElements } from './MaterialUIBasi
 import { blockRouterMetaData as MUITemplateDashboard } from './MUITemplateDashboard/router-data';
 import { blockRouterMetaData as TodoExercise } from './TodoExercise/router-data';
 import { blockRouterMetaData as LocalDevAndFetch } from './LocalDevAndFetch/router-data';
+import { blockRouterMetaData as ToDoWithServer } from './ToDoWithServer/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -22,6 +23,7 @@ export const blockRouterMetaData = [
   MUITemplateDashboard,
   TodoExercise,
   LocalDevAndFetch,
+  ToDoWithServer,
 ];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
