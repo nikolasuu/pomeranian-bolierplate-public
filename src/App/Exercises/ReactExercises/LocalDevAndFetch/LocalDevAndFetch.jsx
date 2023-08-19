@@ -20,7 +20,7 @@ export function LocalDevAndFetch() {
   }, [refreshList]);
 
   const addToDo = async () => {
-    const newRecord = await fetch('http://localhost:3333/api/todo', {
+    await fetch('http://localhost:3333/api/todo', {
       method: 'POST',
       body: JSON.stringify({
         title: 'AddButton',

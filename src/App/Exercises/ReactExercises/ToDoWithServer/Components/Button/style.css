@@ -1,0 +1,29 @@
+.todo-button {
+    display: flex;
+    height: 3.5rem;
+    min-width: 10rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    color: #FFF;
+    font-size: 1.125rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.todo-button:hover {
+    opacity: 0.8;
+
+}
+
+.todo-button--primary {
+   
+    background: #FE3756;
+    border: 1px solid #FE3756
+}
+
+.todo-button--secondary {
+    border: 1px solid #23213D;
+    background: #23213D;
+}
