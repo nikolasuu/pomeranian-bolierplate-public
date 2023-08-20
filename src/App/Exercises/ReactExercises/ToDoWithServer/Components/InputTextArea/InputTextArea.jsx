@@ -1,6 +1,6 @@
 import './style.css';
 
-export function InputTextArea({ value, placeholder, id }) {
+export function InputTextArea({ onChange, value, placeholder, id }) {
   return (
     <textarea
       type="text"
@@ -8,6 +8,7 @@ export function InputTextArea({ value, placeholder, id }) {
       id={id}
       value={value}
       placeholder={placeholder}
+      onChange={onChange}
     />
   );
 }
