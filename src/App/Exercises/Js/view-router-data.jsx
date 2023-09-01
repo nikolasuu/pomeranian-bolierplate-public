@@ -30,6 +30,7 @@ import { blockRouterMetaData as JSONXMLStorage } from './JSONXMLStorage/router-d
 import { blockRouterMetaData as SavedInput } from './SavedInput/router-data';
 import { blockRouterMetaData as Promises } from './Promises/router-data';
 import { blockRouterMetaData as AsyncAwaitExercise } from './asyncAwaitExercise/router-data';
+import { blockRouterMetaData as Testing } from './Testing/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -62,5 +63,6 @@ export const blockRouterMetaData = [
   SavedInput,
   Promises,
   AsyncAwaitExercise,
+  Testing,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
