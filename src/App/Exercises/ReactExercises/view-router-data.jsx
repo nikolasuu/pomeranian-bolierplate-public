@@ -11,6 +11,8 @@ import { blockRouterMetaData as MUITemplateDashboard } from './MUITemplateDashbo
 import { blockRouterMetaData as TodoExercise } from './TodoExercise/router-data';
 import { blockRouterMetaData as LocalDevAndFetch } from './LocalDevAndFetch/router-data';
 import { blockRouterMetaData as ToDoWithServer } from './ToDoWithServer/router-data';
+import { blockRouterMetaData as ReduxTest } from './ReduxTest/router-data';
+import { blockRouterMetaData as ReduxCounter } from './ReduxCounter/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -24,6 +26,8 @@ export const blockRouterMetaData = [
   TodoExercise,
   LocalDevAndFetch,
   ToDoWithServer,
+  ReduxTest,
+  ReduxCounter,
 ];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
