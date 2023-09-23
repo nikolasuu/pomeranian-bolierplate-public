@@ -2,6 +2,12 @@
     padding-top: 5rem;
 }
 
+@media screen and (max-width: 50rem) {
+    .dashboard .dashboard-about-me{
+        display: none;
+    }
+    
+}
 .dashboard-about-me .email-container,
 .dashboard-about-me .telephone-container {
 

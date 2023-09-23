@@ -9,50 +9,48 @@ import { FaqIcon } from '../Components/Icons/FaqIcon';
 
 import './styles/aside.css';
 
-export function AppAside() {
+export function AppAside({ visible, handleVisible }) {
   return (
-    <aside>
+    <aside className={visible ? 'aside-visible' : ''}>
       <nav>
         <ul>
           <li>
-            <NavLink to="dashboard">
+            <NavLink to="dashboard" onClick={handleVisible}>
               <HouseIcon className="icon" /> Dashboard
             </NavLink>
           </li>
           <li>
-            <NavLink to="cv">
+            <NavLink to="cv" onClick={handleVisible}>
               <PersonalCardIcon className="icon" /> Moje CV
             </NavLink>
           </li>
           <li>
-            <NavLink to="exercises">
+            <NavLink to="exercises" onClick={handleVisible}>
               <EditIcon className="icon" /> Ćwiczenia
             </NavLink>
           </li>
           <li>
-            <NavLink to="blocks">
+            <NavLink to="blocks" onClick={handleVisible}>
               <ElementIcon className="icon" /> Bloki
             </NavLink>
           </li>
           <li>
-            <NavLink to="calendar">
+            <NavLink to="calendar" onClick={handleVisible}>
               <CalendarIcon className="icon" /> Kalendarz
             </NavLink>
           </li>
           <li>
-            <NavLink to="blog">
+            <NavLink to="blog" onClick={handleVisible}>
               <BookIcon className="icon" /> Blog
             </NavLink>
           </li>
           <li>
-            <NavLink to="faq">
+            <NavLink to="faq" onClick={handleVisible}>
               <FaqIcon className="icon" /> FAQ
             </NavLink>
           </li>
-          <hr></hr>
         </ul>
       </nav>
-      <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p>
     </aside>
   );
 }

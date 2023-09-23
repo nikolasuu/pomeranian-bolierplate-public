@@ -6,6 +6,7 @@ import { HtmlCssExercises, HtmlCssExerciseItem } from './HtmlCss';
 import { Categories } from './Categories';
 import { ReactExercises, ReactExercisesItem } from './ReactExercises';
 import { NotFound } from '../Components/NotFound/NotFound';
+import { MasterHeader } from '../Components/MasterHeader/MasterHeader';
 
 import './styles.css';
 
@@ -29,7 +30,10 @@ export function Exercises() {
 function BlockLayout() {
   return (
     <>
-      <h1>Ćwiczenia</h1>
+      <MasterHeader title="Ćwiczenia" />
+      <p>
+        Tutaj znajdziesz wszystkie ćwiczenia, które realizowane były na kursie.
+      </p>
       <div className="exercise-main-container">
         <Categories />
         <Outlet />

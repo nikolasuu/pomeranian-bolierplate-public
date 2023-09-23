@@ -5,7 +5,94 @@
   grid-template-rows: calc(100vh - 5rem - 5rem - 1.5rem - 1.5rem);
 }
 
-.exercises-categories a.active {
-  background-color: var(--color-primary-blue);
-  color: var(--color-white);
+.exercises-categories a {
+  display: flex;
+  width: 27rem;
+  height: 5.5rem;
+  padding: 0.9rem;
+  margin: 0 0.5rem 0.5rem 0;
+  align-items: center;
+  border-radius: 0.45rem;
+  border: 0.125rem solid var(--secondary-secondary, #23213D);
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+.exercises-categories svg {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 1rem;
+  fill: black;
+  
+}
+.exercises-categories a.active,
+.exercises-categories a.active svg  {
+  border-color: #FE3756;
+  color: #FE3756;
+  fill: #FE3756;
+  stroke: #FE3756;
+}
+.exercises-categories-lists ul li{
+  display: flex;
+  min-width: 21rem;
+  min-height: 5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  align-items: center; 
+  border-radius: 0.45rem;
+  border: 0.75px solid var(--black-black, #000);
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 1rem;
+}
+.exercises-categories-lists ul li a{
+  text-decoration: none;
+  padding-left: 1rem;
+  width: 100%;
+}
+.exercises-categories-lists ul li div .exercise-link-desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: flex-end;
+}
+.exercises-categories-lists ul li a span {
+  font-size: 0.8rem;
+  min-width: 5rem;
+}
+.exercises-categories-lists .exercise-link-desc .exercise-link-desc-tags{
+  text-align: end;
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 50rem) {
+  .exercise-main-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 6rem;
+  }
+  .exercises-categories{
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+  }
+  .exercises-categories h2{
+    display: none;
+  }
+  .exercises-categories a {
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+    border-bottom: 0.125rem solid var(--secondary-secondary, #23213D);
+  }
+  .exercises-categories a p {
+    display: none;
+  }
+  .exercises-categories svg {
+    margin: auto;
+  }
+  .exercises-categories-lists ul{
+    padding: 0;
+  }
+  
 }

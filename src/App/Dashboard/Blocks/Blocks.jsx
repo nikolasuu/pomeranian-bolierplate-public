@@ -1,3 +1,4 @@
+import './styles.css';
 import { Link } from 'react-router-dom';
 import personalcard from '../../Images/tiles/personalcard.svg';
 import code from '../../Images/tiles/code.svg';
@@ -5,13 +6,9 @@ import edit from '../../Images/tiles/edit.svg';
 import blog from '../../Images/tiles/blog.svg';
 import faq from '../../Images/tiles/faq.svg';
 
-// import jsSvg from './images/tech-stack/js.svg';
-// import reactSvg from './images/tech-stack/react.svg';
-// import vscSvg from './images/tech-stack/vscode-alt 1.png';
-
 export const Blocks = () => {
   const SeeMoreLink = (props) => {
-    return <Link to={props.to}>Zobacz więcej</Link>;
+    return <Link to={props.to}>Zobacz</Link>;
   };
 
   return (

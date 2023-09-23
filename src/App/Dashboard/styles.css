@@ -11,3 +11,10 @@
 .dashboard>div {
     padding: 1rem;
 }
+
+@media screen and (max-width: 50rem) {
+    .dashboard{
+        grid-template-columns: 100vw;
+    }
+    
+}
