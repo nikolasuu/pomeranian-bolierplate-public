@@ -6,6 +6,7 @@ import { HouseIcon } from '../Components/Icons/HouseIcon';
 import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
 import { BookIcon } from '../Components/Icons/BookIcon';
 import { FaqIcon } from '../Components/Icons/FaqIcon';
+import { FormIcon } from '../Components/Icons/FormIcom';
 
 import './styles/aside.css';
 
@@ -37,6 +38,11 @@ export function AppAside({ visible, handleVisible }) {
           <li>
             <NavLink to="calendar" onClick={handleVisible}>
               <CalendarIcon className="icon" /> Kalendarz
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="form" onClick={handleVisible}>
+              <FormIcon className="icon" /> Formularz
             </NavLink>
           </li>
           <li>
