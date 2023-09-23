@@ -16,7 +16,7 @@ export function HtmlCssExercises() {
   const element = useRoutes(htmlBlockRouterData);
 
   return (
-    <div>
+    <div className="exercises-categories-lists">
       <p>HTML & CSS - lista ćwiczeń</p>
       <GoBackLink label="Zamknij" />
 

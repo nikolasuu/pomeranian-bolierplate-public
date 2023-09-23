@@ -13,6 +13,14 @@
   background: var(--color-white);
   color: var(--color-grey);
 }
+@media only screen and (max-width: 50rem) {
+  .layout {
+    grid-template-areas:
+    'header header'
+    'main main'
+    'footer footer';
+    }
+  }
 
 main {
   grid-area: main;
@@ -23,3 +31,4 @@ main {
   flex: 1;
   padding: 1.5rem;
 }
+

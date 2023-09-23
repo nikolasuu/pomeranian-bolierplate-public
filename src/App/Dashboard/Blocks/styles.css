@@ -1,0 +1,9 @@
+.dashboard-tiles {
+    user-select: none;
+}
+
+@media only screen and (max-width: 400px) {
+  .dashboard-tiles {
+      /* background-color: lightblue; */
+    }
+  }

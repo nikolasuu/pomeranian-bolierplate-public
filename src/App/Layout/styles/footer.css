@@ -6,7 +6,9 @@ footer {
   position: relative;
   padding: 18px;
 }
-
+@media screen and (max-width: 50rem){
+  
+}
 footer > * {
   color: var(--color-white);
   text-decoration: none;

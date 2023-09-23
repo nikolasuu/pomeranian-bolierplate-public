@@ -4,25 +4,20 @@ import './styles/header.css';
 import '../Components/HeaderMenu/styles.css';
 import { Logo } from '../Components/Logo/Logo';
 import { HeaderMenu } from '../Components/HeaderMenu/HeaderMenu';
+import person from '../Images/user.svg';
+import hamburger from '../Images/hamburger.svg';
 
-// const LogoNew = () => (
-//   <a href="/">
-//     {' '}
-//     <img
-//       style={{ width: 50 }}
-//       src={'http://placekitten.com/500/500'}
-//       className="logo"
-//       alt="logo"
-//     />
-//   </a>
-// );
-
-export function AppHeader() {
+export function AppHeader({ handleVisible }) {
   return (
     <header>
-      {/* <LogoNew /> */}
+      <button className="header-button">
+        <img src={hamburger} alt="hamburger" onClick={handleVisible} />
+      </button>
       <Logo />
       <HeaderMenu />
+      <button className="header-button">
+        <img src={person} alt="person" />
+      </button>
     </header>
   );
 }

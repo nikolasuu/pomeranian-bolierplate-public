@@ -1,18 +1,31 @@
 aside {
-  border-right: 1px solid var(--color-grey);
+  grid-area: sidebar;
+  border-right: 1px solid #EBEBEB;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow-y: auto;
 }
-
+@media screen and (max-width: 50rem) {
+  aside {
+    display: none;
+  }
+  aside.aside-visible{
+    display: flex;
+    position: absolute;
+    background-color: rgb(255,255,255);
+    top: 5rem;
+    box-shadow: 0px 1px 9px 0px var(--color-grey);
+    z-index: 9;
+  }
+}
 aside ul {
   /* Nadpisanie domyślnych styli przeglądarki */
   padding-inline-start: 0.5rem;
   list-style: none;
 }
-
+ 
 aside li {
   line-height: 2rem;
 }
@@ -26,15 +39,11 @@ aside li {
 aside li a {
   display: block;
   padding: 0.5rem;
+  text-decoration: none;
 }
 
-/* aside a.active {
-  background-color: var(--color-primary-blue);
-  color: var(--color-white);
-} */
-
-aside li>:hover {
-  color: red
+aside li>:hover{
+  color: red;
 }
 
 .icon {
@@ -48,3 +57,4 @@ aside li>:hover {
 aside a.active .icon path {
   stroke: var(--primary-primary, #FE3756);
 }
+
