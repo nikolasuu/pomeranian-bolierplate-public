@@ -16,7 +16,7 @@ export function JsExercises() {
   const element = useRoutes(jsBlockRouterData);
 
   return (
-    <div>
+    <div className="exercises-categories-lists">
       <p>JS - lista ćwiczeń</p>
       <GoBackLink label="Zamknij" />
 
